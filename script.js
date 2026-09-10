@@ -1,0 +1,1 @@
+const button=document.getElementById('filterBtn');const items=[...document.querySelectorAll('.recommendation')];let highOnly=false;button.addEventListener('click',()=>{highOnly=!highOnly;items.forEach(x=>x.style.display=highOnly&&!x.classList.contains('high')?'none':'flex');button.textContent=highOnly?'Show All Recommendations':'Show High Priority';});
